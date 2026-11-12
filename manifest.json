@@ -1,0 +1,16 @@
+{
+  "name": "Guia de Estudos Transpetro",
+  "short_name": "Transpetro",
+  "start_url": "/Transpetro/index.html",
+  "scope": "/Transpetro/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "https://flaticon.com",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

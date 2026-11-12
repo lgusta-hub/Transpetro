@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico Analítico: Concurso Transpetro - Segundo Oficial de Máquinas (2OM)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Tailwind Custom Colors Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                        },
+                        maritime: {
+                            blue: '#1e3a8a',
+                            cyan: '#06b6d4',
+                            teal: '#0d9488',
+                            amber: '#f59e0b',
+                            coral: '#ef4444',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 360px;
+            }
+        }
+        .stat-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-navy-900 via-maritime-blue to-navy-900 text-white py-10 px-4 sm:px-6 lg:px-8 shadow-xl">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-maritime-cyan/20 border border-maritime-cyan/40 px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-maritime-cyan uppercase mb-3">
+                        <span>🚢</span> Quadro de Mar • Edital Transpetro / Cesgranrio
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+                        Mapa Estratégico: Segundo Oficial de Máquinas
+                    </h1>
+                    <p class="mt-2 text-slate-300 text-sm sm:text-base max-w-3xl">
+                        Análise quantitativa de incidência temática, padrão psicométrico da Fundação Cesgranrio, requisitos de corte e diretrizes para aprovação no certame.
+                    </p>
+                </div>
+                <div class="flex flex-wrap md:flex-col gap-3 justify-start md:items-end">
+                    <div class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20 text-right">
+                        <span class="block text-xs text-slate-300 uppercase tracking-wider">Remuneração Inicial Bruta</span>
+                        <span class="text-xl font-black text-emerald-400">Até R$ 15.034,81</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20 text-right">
+                        <span class="block text-xs text-slate-300 uppercase tracking-wider">Total de Questões</span>
+                        <span class="text-xl font-black text-maritime-cyan">70 Questões (4h30m)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+        <!-- KPI Grid Overview -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="stat-card bg-white p-6 rounded-xl shadow-md border-l-4 border-maritime-blue flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Peso Prova Específica</div>
+                    <div class="text-3xl font-black text-navy-900 mt-2">71,4%</div>
+                    <p class="text-xs text-slate-600 mt-1">50 Questões de Engenharia Naval e Praça de Máquinas.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                    <span>Mínimo exigido: 25 acertos</span>
+                    <span class="text-emerald-600 font-bold">🎯 50%</span>
+                </div>
+            </div>
+
+            <div class="stat-card bg-white p-6 rounded-xl shadow-md border-l-4 border-maritime-cyan flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Língua Portuguesa</div>
+                    <div class="text-3xl font-black text-navy-900 mt-2">14,3%</div>
+                    <p class="text-xs text-slate-600 mt-1">10 Questões • Foco em interpretação de texto e sintaxe.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                    <span>Corte: Nota &gt; 0</span>
+                    <span class="text-maritime-cyan font-bold">📄 10 Questões</span>
+                </div>
+            </div>
+
+            <div class="stat-card bg-white p-6 rounded-xl shadow-md border-l-4 border-maritime-teal flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Língua Inglesa</div>
+                    <div class="text-3xl font-black text-navy-900 mt-2">14,3%</div>
+                    <p class="text-xs text-slate-600 mt-1">10 Questões • Foco em manuais técnicos e normativas IMO.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                    <span>Corte: Nota &gt; 0</span>
+                    <span class="text-maritime-teal font-bold">🌐 10 Questões</span>
+                </div>
+            </div>
+
+            <div class="stat-card bg-white p-6 rounded-xl shadow-md border-l-4 border-maritime-amber flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Segunda Etapa (EAF)</div>
+                    <div class="text-3xl font-black text-navy-900 mt-2">Eliminatório</div>
+                    <p class="text-xs text-slate-600 mt-1">Corrida de 12 min (1.800m M / 1.500m F) + Natação 25m.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                    <span>Validação SISAQUA</span>
+                    <span class="text-maritime-amber font-bold">🏊 NORMAM-101</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: Estrutura Geral e Regras de Eliminação -->
+        <section class="bg-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>📊</span> Arquitetura do Exame &amp; Regras de Eliminatória
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    A prova objetiva é composta por 70 questões com duração total de 4 horas e 30 minutos (aproximadamente 3,8 minutos por questão). Entender a distribuição das questões e os pontos de corte é fundamental para o gerenciamento de tempo.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Donut Chart -->
+                <div>
+                    <h3 class="text-base font-bold text-slate-700 text-center mb-4">Composição de Questões da Prova</h3>
+                    <div class="chart-container">
+                        <canvas id="examStructureChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Strategic Rules Summary Card -->
+                <div class="space-y-4">
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                            <span>🛑</span> Condições Habilitatórias de Eliminação Sumária
+                        </h4>
+                        <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-maritime-coral font-bold">•</span>
+                                <span><strong>Conhecimentos Específicos:</strong> Menos de 50% de acerto (mínimo de 25 questões corretas das 50).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-maritime-coral font-bold">•</span>
+                                <span><strong>Conhecimentos Gerais (Agregado):</strong> Menos de 50% de acerto no total do bloco geral (mínimo de 10 acertos somando Português e Inglês).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-maritime-coral font-bold">•</span>
+                                <span><strong>Zerar Qualquer Disciplina:</strong> Obter pontuação zero em Português ou em Inglês elimina o candidato automaticamente.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50/60 p-5 rounded-xl border border-blue-200">
+                        <h4 class="font-bold text-maritime-blue flex items-center gap-2">
+                            <span>💡</span> Dica de Gestão de Tempo
+                        </h4>
+                        <p class="text-xs sm:text-sm text-slate-700 mt-1">
+                            Recomenda-se iniciar pelas 10 questões de Inglês Técnico (leitura objetiva de manuais) e seguir para Conhecimentos Específicos, reservando os últimos 60 minutos para a interpretação densa de textos de Língua Portuguesa e preenchimento do cartão-resposta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Incidência em Conhecimentos Específicos -->
+        <section class="bg-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>⚙️</span> Núcleo Duro: Incidência em Conhecimentos Específicos
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    Com 50 questões, este bloco define a classificação. A Fundação Cesgranrio prioriza a aplicação prática em detrimento de conceitos puramente teóricos, simulando a rotina operacional da praça de máquinas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8">
+                <!-- Bar Chart Specific Topics -->
+                <div>
+                    <h3 class="text-base font-bold text-slate-700 text-center mb-4">Distribuição Percentual Histórica por Subárea</h3>
+                    <div class="chart-container">
+                        <canvas id="specificTopicsChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Key Subject Breakdown Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 text-maritime-blue font-bold text-sm mb-1">
+                            <span>🔧</span> Motores Diesel &amp; Propulsão (22%)
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            Ciclos de 2 e 4 tempos, sobrealimentação (turbo), sistemas de injeção, resfriamento de camisas e lubrificação de cilindros.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 text-maritime-teal font-bold text-sm mb-1">
+                            <span>🌊</span> Máquinas de Fluxo (18%)
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            Bombas centrífugas vs. deslocamento positivo, NPSH e prevenção de cavitação, purificadores centrífugos e compressores.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 text-maritime-cyan font-bold text-sm mb-1">
+                            <span>⚡</span> Eletrotécnica Naval (16%)
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            Motores trifásicos de indução, paralelismo de geradores síncronos no MSB e proteção contra sobrecorrente/curto.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 text-maritime-amber font-bold text-sm mb-1">
+                            <span>🔥</span> Termodinâmica &amp; Caldeiras (16%)
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            Geração e recuperação de vapor, tratamento de água de caldeira, ponto de fulgor, viscosidade e atomização de bunker.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Dive Specific Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100">
+                <div class="bg-slate-900 text-white p-5 rounded-xl">
+                    <h4 class="font-bold text-maritime-cyan text-sm uppercase tracking-wider mb-2">
+                        📐 Metrologia &amp; Usinagem (14%)
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Leitura de instrumentos de precisão (paquímetro/vernier, micrômetro e relógio comparador para alinhamento de eixos). Cálculos de rodas dentadas no torno mecânico e ângulos de ferramentas para confecção de peças sobressalentes a bordo.
+                    </p>
+                </div>
+                <div class="bg-slate-900 text-white p-5 rounded-xl">
+                    <h4 class="font-bold text-maritime-amber text-sm uppercase tracking-wider mb-2">
+                        🛡️ Segurança, Combate a Incêndio &amp; SOLAS (14%)
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Classes de incêndio (A, B, C, D, K) e escolha do agente extintor. Sistemas fixos de CO2 e espuma na praça de máquinas. Equipamentos de salvamento (LSA): baleeiras por queda livre, balsas autoinfláveis com disparo por válvula hidrostática e radiobalizas EPIRB/SART.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Língua Portuguesa e Língua Inglesa -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Português Card -->
+            <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+                            <span>📝</span> Língua Portuguesa
+                        </h2>
+                        <span class="bg-blue-100 text-maritime-blue text-xs font-bold px-2.5 py-1 rounded">10 Questões</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm mb-4">
+                        A banca foca predominantemente na compreensão global do texto (36%) e em sintaxe prática (reescrita, concordância e pontuação).
+                    </p>
+
+                    <div class="chart-container mb-4">
+                        <canvas id="portugueseChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs space-y-2">
+                    <div class="font-bold text-slate-700 mb-1">📌 Pegadinhas Frequentes em Português:</div>
+                    <p class="text-slate-600"><strong>Verbo Haver:</strong> Uso impessoal com sentido de existir/tempo decorrido (permanece no singular em locuções verbais).</p>
+                    <p class="text-slate-600"><strong>Crase:</strong> Cobrança em casos proibidos (antes de verbos e palavras masculinas generalizadas).</p>
+                </div>
+            </div>
+
+            <!-- Inglês Card -->
+            <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+                            <span>🌐</span> Língua Inglesa (Técnico Marítimo)
+                        </h2>
+                        <span class="bg-teal-100 text-maritime-teal text-xs font-bold px-2.5 py-1 rounded">10 Questões</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm mb-4">
+                        Foco em leitura instrumental de manuais de equipamentos, relatórios de avarias e normativas IMO/SOLAS.
+                    </p>
+
+                    <div class="chart-container mb-4">
+                        <canvas id="englishChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs space-y-2">
+                    <div class="font-bold text-slate-700 mb-1">📌 Foco Operacional em Inglês:</div>
+                    <p class="text-slate-600"><strong>Modal Verbs:</strong> Distinção entre obrigatoriedade normativa (<em>must</em>) e recomendação técnica (<em>should</em>).</p>
+                    <p class="text-slate-600"><strong>Falsos Cognatos:</strong> Uso de <em>actually</em> (na verdade) vs. <em>currently</em> (atualmente); <em>eventually</em> (finalmente).</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 4: Perfil da Banca Cesgranrio & Armadilhas -->
+        <section class="bg-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>🕵️‍♂️</span> Psicometria da Fundação Cesgranrio: As 4 Pegadinhas Clássicas
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    A Cesgranrio constrói distratores baseados em erros operacionais reais. Conhecer a estrutura dos distratores reduz significativamente a taxa de erro involuntário.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50/40 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-maritime-blue text-white rounded-lg flex items-center justify-center font-bold text-sm mb-3">1</div>
+                        <h3 class="font-bold text-navy-900 text-base mb-2">Conceito Invertido</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            A alternativa parece perfeita e usa vocabulário técnico correto, mas substitui sutilmente "diretamente proporcional" por "inversamente proporcional".
+                        </p>
+                    </div>
+                    <span class="inline-block mt-4 text-[11px] font-bold text-maritime-blue bg-blue-100 px-2 py-1 rounded">Atenção às Relações Físicas</span>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-cyan-50/40 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-maritime-cyan text-white rounded-lg flex items-center justify-center font-bold text-sm mb-3">2</div>
+                        <h3 class="font-bold text-navy-900 text-base mb-2">Descompasso Dimensional</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            O cálculo numérico do candidato está correto, mas a unidade de medida fornecida na opção está errada (ex.: resultado em Pascal ao invés de Bar).
+                        </p>
+                    </div>
+                    <span class="inline-block mt-4 text-[11px] font-bold text-maritime-cyan bg-cyan-100 px-2 py-1 rounded">Conferir Unidades de Medida</span>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-teal-50/40 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-maritime-teal text-white rounded-lg flex items-center justify-center font-bold text-sm mb-3">3</div>
+                        <h3 class="font-bold text-navy-900 text-base mb-2">Dados Supérfluos</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            O enunciado apresenta diversas variáveis de fluxo ou eletrotécnica desnecessárias para a solução final, induzindo o candidato a aplicar fórmulas erradas.
+                        </p>
+                    </div>
+                    <span class="inline-block mt-4 text-[11px] font-bold text-maritime-teal bg-teal-100 px-2 py-1 rounded">Filtrar Variáveis Relevantes</span>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-amber-50/40 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-maritime-amber text-white rounded-lg flex items-center justify-center font-bold text-sm mb-3">4</div>
+                        <h3 class="font-bold text-navy-900 text-base mb-2">Resultado Intermediário</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Em problemas matemáticos de várias etapas (ex.: estequiometria ou engrenagens), uma das alternativas incorretas traz o número obtido na metade do cálculo.
+                        </p>
+                    </div>
+                    <span class="inline-block mt-4 text-[11px] font-bold text-maritime-amber bg-amber-100 px-2 py-1 rounded">Concluir Todas as Etapas</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 5: Segunda Etapa (EAF) & Trilha de Admissão -->
+        <section class="bg-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>🏃‍♂️</span> Segunda Etapa: Exame de Aptidão Física (EAF) &amp; Requisitos NORMAM
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    Exclusivo para cargos do Quadro de Mar (Oficiais). A reprovação no EAF desclassifica o candidato independentemente da nota na prova objetiva.
+                </p>
+            </div>
+
+            <!-- EAF Comparison Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-bold text-navy-900 text-base flex items-center gap-2">
+                            <span>⏱️</span> Teste 1: Corrida de Fundo (12 minutos)
+                        </h3>
+                        <span class="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-1 rounded">Eliminatório</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-600 mb-1">
+                                <span>Masculino</span>
+                                <span>1.800 metros</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
+                                <div class="bg-maritime-blue h-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-600 mb-1">
+                                <span>Feminino</span>
+                                <span>1.500 metros</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
+                                <div class="bg-maritime-teal h-full" style="width: 62.5%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-4">
+                        Permitido alternar corrida com caminhada. O percurso deve ser completado rigorosamente em 12 minutos.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-bold text-navy-900 text-base flex items-center gap-2">
+                            <span>🏊</span> Teste 2: Natação em Estilo Livre (25 metros)
+                        </h3>
+                        <span class="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-1 rounded">Eliminatório</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-600 mb-1">
+                                <span>Ambos os Sexos</span>
+                                <span>25 metros contínuos</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
+                                <div class="bg-maritime-cyan h-full" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-4">
+                        Sem limite de tempo estabelecido. Proibido apoiar-se nas raias, bordas laterais ou no fundo da piscina durante a travessia.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Admission Roadmap Timeline -->
+            <div>
+                <h3 class="text-base font-bold text-slate-800 mb-4 text-center">Jornada de Homologação e Posse (Fluxo Marítimo)</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    
+                    <div class="relative p-4 bg-slate-900 text-white rounded-xl flex flex-col justify-between">
+                        <div class="text-xs text-maritime-cyan font-bold uppercase tracking-wider mb-1">Etapa 01</div>
+                        <div class="font-bold text-sm mb-2">Prova Objetiva</div>
+                        <p class="text-xs text-slate-300">Aprovação com &ge;50% em Específicas e &ge;50% no bloco Geral (sem zerar matérias).</p>
+                    </div>
+
+                    <div class="relative p-4 bg-slate-900 text-white rounded-xl flex flex-col justify-between">
+                        <div class="text-xs text-maritime-amber font-bold uppercase tracking-wider mb-1">Etapa 02</div>
+                        <div class="font-bold text-sm mb-2">Exame Físico (EAF)</div>
+                        <p class="text-xs text-slate-300">Aprovação nos testes operacionais de corrida de 12 min e natação livre de 25m.</p>
+                    </div>
+
+                    <div class="relative p-4 bg-slate-900 text-white rounded-xl flex flex-col justify-between">
+                        <div class="text-xs text-emerald-400 font-bold uppercase tracking-wider mb-1">Etapa 03</div>
+                        <div class="font-bold text-sm mb-2">Documentação SISAQUA</div>
+                        <p class="text-xs text-slate-300">Apresentação da CIR ativa de 2OM e certificados STCW III/1 homologados pela DPC.</p>
+                    </div>
+
+                    <div class="relative p-4 bg-slate-900 text-white rounded-xl flex flex-col justify-between">
+                        <div class="text-xs text-purple-400 font-bold uppercase tracking-wider mb-1">Etapa 04</div>
+                        <div class="font-bold text-sm mb-2">Contratação CLT</div>
+                        <p class="text-xs text-slate-300">Admissão na Transpetro com alocação no regime de embarque e adicionais marítimos.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+            <div>
+                <p class="font-semibold text-slate-300">Guia de Preparação Técnica • Transpetro Segundo Oficial de Máquinas</p>
+                <p class="text-slate-500 mt-0.5">Baseado no Edital nº 02 e estatísticas históricas da Fundação Cesgranrio.</p>
+            </div>
+            <div class="text-slate-500 text-right">
+                <span>Engenharia Naval &amp; Marinha Mercante</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chart.js Scripts Initialization -->
+    <script>
+        // Label wrapping helper function for Chart.js (Max ~16 characters per line)
+        function formatLabels(labels) {
+            return labels.map(label => {
+                if (typeof label === 'string' && label.length > 16) {
+                    const words = label.split(' ');
+                    const lines = [];
+                    let currentLine = '';
+
+                    words.forEach(word => {
+                        if ((currentLine + ' ' + word).trim().length <= 16) {
+                            currentLine = (currentLine + ' ' + word).trim();
+                        } else {
+                            if (currentLine) lines.push(currentLine);
+                            currentLine = word;
+                        }
+                    });
+                    if (currentLine) lines.push(currentLine);
+                    return lines;
+                }
+                return label;
+            });
+        }
+
+        // Global Chart Defaults for Tooltips & Multi-line Titles
+        const globalTooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        // 1. Chart: Exam Structure (Donut)
+        const ctxExam = document.getElementById('examStructureChart').getContext('2d');
+        const rawExamLabels = ['Conhecimentos Específicos', 'Língua Portuguesa', 'Língua Inglesa'];
+        new Chart(ctxExam, {
+            type: 'doughnut',
+            data: {
+                labels: formatLabels(rawExamLabels),
+                datasets: [{
+                    data: [50, 10, 10],
+                    backgroundColor: ['#1e3a8a', '#06b6d4', '#0d9488'],
+                    hoverOffset: 6,
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { boxWidth: 12, font: { size: 11 } }
+                    },
+                    tooltip: globalTooltipConfig.plugins.tooltip
+                }
+            }
+        });
+
+        // 2. Chart: Specific Topics (Horizontal Bar)
+        const ctxSpecific = document.getElementById('specificTopicsChart').getContext('2d');
+        const rawSpecificLabels = [
+            'Motores Diesel e Propulsão',
+            'Máquinas de Fluxo e Bombas',
+            'Eletrotécnica Naval',
+            'Termodinâmica e Caldeiras',
+            'Segurança e SOLAS',
+            'Metrologia e Usinagem'
+        ];
+        new Chart(ctxSpecific, {
+            type: 'bar',
+            data: {
+                labels: formatLabels(rawSpecificLabels),
+                datasets: [{
+                    label: 'Incidência (%)',
+                    data: [22, 18, 16, 16, 14, 14],
+                    backgroundColor: ['#1e3a8a', '#0d9488', '#06b6d4', '#f59e0b', '#ef4444', '#64748b'],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 25,
+                        ticks: { callback: value => value + '%' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: globalTooltipConfig.plugins.tooltip
+                }
+            }
+        });
+
+        // 3. Chart: Portuguese Topics (Doughnut)
+        const ctxPort = document.getElementById('portugueseChart').getContext('2d');
+        const rawPortLabels = [
+            'Compreensão de Texto',
+            'Morfologia e Sintaxe',
+            'Semântica',
+            'Ortografia e Pontuação',
+            'Concordância e Regência'
+        ];
+        new Chart(ctxPort, {
+            type: 'doughnut',
+            data: {
+                labels: formatLabels(rawPortLabels),
+                datasets: [{
+                    data: [36, 21, 15, 14, 14],
+                    backgroundColor: ['#1e3a8a', '#06b6d4', '#0d9488', '#f59e0b', '#64748b'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { boxWidth: 10, font: { size: 10 } }
+                    },
+                    tooltip: globalTooltipConfig.plugins.tooltip
+                }
+            }
+        });
+
+        // 4. Chart: English Topics (Bar Chart)
+        const ctxEng = document.getElementById('englishChart').getContext('2d');
+        const rawEngLabels = [
+            'Leitura de Manuais Técnicos',
+            'Vocabulário Náutico e Praça',
+            'Verbos Modais e Normas IMO',
+            'Voz Passiva e Conectivos'
+        ];
+        new Chart(ctxEng, {
+            type: 'bar',
+            data: {
+                labels: formatLabels(rawEngLabels),
+                datasets: [{
+                    label: 'Peso Relativo (%)',
+                    data: [45, 25, 15, 15],
+                    backgroundColor: '#0d9488',
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 50,
+                        ticks: { callback: value => value + '%' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: globalTooltipConfig.plugins.tooltip
+                }
+            }
+        });
+    </script>
+</body>
+</html>

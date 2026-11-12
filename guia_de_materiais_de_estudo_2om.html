@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Materiais de Estudo: Transpetro - Oficial de Máquinas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                        },
+                        maritime: {
+                            blue: '#1e3a8a',
+                            cyan: '#06b6d4',
+                            teal: '#0d9488',
+                            amber: '#f59e0b',
+                            coral: '#ef4444',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .resource-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-navy-900 via-maritime-blue to-navy-900 text-white py-10 px-4 sm:px-6 lg:px-8 shadow-xl">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-maritime-cyan/20 border border-maritime-cyan/40 px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-maritime-cyan uppercase mb-3">
+                        <span>📚</span> Bibliografia &amp; Recursos Recomendados • Transpetro 2OM
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Roteiro de Materiais de Estudo até a Prova
+                    </h1>
+                    <p class="mt-2 text-slate-300 text-sm sm:text-base max-w-3xl">
+                        Indicação detalhada de livros acadêmicos, apostilas da Marinha (DPC/CIAGA), canais do YouTube, normativas internacionais (IMO/SOLAS) e bancos de questões direcionados à Fundação Cesgranrio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Pills -->
+    <nav class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm py-3 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-wrap gap-2 text-xs font-semibold text-slate-600">
+            <a href="#especificas" class="px-3 py-1.5 bg-slate-100 hover:bg-maritime-blue hover:text-white rounded-md transition-colors">⚙️ Conhecimentos Específicos</a>
+            <a href="#portugues" class="px-3 py-1.5 bg-slate-100 hover:bg-maritime-blue hover:text-white rounded-md transition-colors">📝 Português</a>
+            <a href="#ingles" class="px-3 py-1.5 bg-slate-100 hover:bg-maritime-blue hover:text-white rounded-md transition-colors">🌐 Inglês Técnico</a>
+            <a href="#provas" class="px-3 py-1.5 bg-slate-100 hover:bg-maritime-blue hover:text-white rounded-md transition-colors">🎯 Provas &amp; Questões</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+        <!-- SECTION 1: CONHECIMENTOS ESPECÍFICOS -->
+        <section id="especificas" class="space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>⚙️</span> Conhecimentos Específicos de Máquinas (Peso 71.4%)
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-600">
+                    Dividido pelas 6 principais disciplinas cobradas. Combina teoria universitária de engenharia com apostilas operacionais da Marinha Mercante.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Topic 1: Motores Diesel & Propulsão -->
+                <div class="resource-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-maritime-blue uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded">Maior Peso (22%)</span>
+                            <span class="text-xl">🛠️</span>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Motores Diesel &amp; Propulsão</h3>
+                        
+                        <div class="space-y-3 text-xs text-slate-700">
+                            <div>
+                                <strong class="text-slate-900 block">📖 Livros Didáticos:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><em>Motores de Combustão Interna</em> – Franco Brunetti.</li>
+                                    <li><em>Diesel Engine Reference Book</em> – Leslie Lilly (para detalhes construtivos).</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📑 Apostilas DPC / CIAGA (Essencial):</strong>
+                                <p class="text-slate-600 mt-0.5">Apostilas de <em>Motores Térmicos I e II</em> e <em>Instalações Propulsoras</em> do curso de formação de Oficiais (FOMM).</p>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📺 Canas do YouTube:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><strong>Chief MAKOi:</strong> Análise prática e desmontagem de componentes na praça de máquinas.</li>
+                                    <li><strong>Deck &amp; Engine:</strong> Explicações visuais dos sistemas de injeção e sobrealimentação.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 2: Bombas & Máquinas de Fluxo -->
+                <div class="resource-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-maritime-teal uppercase tracking-wider bg-teal-50 px-2.5 py-1 rounded">18% Incidência</span>
+                            <span class="text-xl">🌊</span>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Máquinas de Fluxo &amp; Auxiliares</h3>
+                        
+                        <div class="space-y-3 text-xs text-slate-700">
+                            <div>
+                                <strong class="text-slate-900 block">📖 Livros Didáticos:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><em>Bombas e Instalações de Bombeamento</em> – Archibald Joseph Macintyre.</li>
+                                    <li><em>Mecânica dos Fluidos</em> – Franco Brunetti ou Fox &amp; McDonald.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📑 Manuais de Fabricantes:</strong>
+                                <p class="text-slate-600 mt-0.5">Manuais de Purificadores Centrífugos <strong>Alfa Laval</strong> e <strong>Westfalia</strong> (Purificação vs. Clarificação de óleo de bunker).</p>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📺 Canais do YouTube:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><strong>Engenharia Marítima Na Prática:</strong> Funcionamento de separadores de água e óleo e bombas de pistão/engrenagens.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 3: Eletrotécnica Naval -->
+                <div class="resource-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-maritime-cyan uppercase tracking-wider bg-cyan-50 px-2.5 py-1 rounded">16% Incidência</span>
+                            <span class="text-xl">⚡</span>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Eletrotécnica &amp; Automação</h3>
+                        
+                        <div class="space-y-3 text-xs text-slate-700">
+                            <div>
+                                <strong class="text-slate-900 block">📖 Livros Didáticos:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><em>Instalações Elétricas</em> – Hélio Creder.</li>
+                                    <li><em>Fundamentos de Circuitos Elétricos</em> – Sadiku / Alexander.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📑 Foco Técnico Marítimo:</strong>
+                                <p class="text-slate-600 mt-0.5">Apostila de <em>Eletrotécnica Naval CIAGA/DPC</em> (Paralelismo de alternadores, sincronoscópio e Quadro Principal de Distribuição - MSB).</p>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📺 Canais do YouTube:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><strong>Ciência Elétrica / Mundo da Elétrica:</strong> Motores de indução trifásicos, ligação estrela-triângulo e proteção por relés.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 4: Termodinâmica & Caldeiras -->
+                <div class="resource-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-maritime-amber uppercase tracking-wider bg-amber-50 px-2.5 py-1 rounded">16% Incidência</span>
+                            <span class="text-xl">🔥</span>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Termodinâmica &amp; Caldeiras</h3>
+                        
+                        <div class="space-y-3 text-xs text-slate-700">
+                            <div>
+                                <strong class="text-slate-900 block">📖 Livros Didáticos:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><em>Termodinâmica</em> – Yunus A. Çengel / Michael A. Boles.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📑 Apostilas DPC:</strong>
+                                <p class="text-slate-600 mt-0.5">Apostila <em>Geradores de Vapor e Caldeiras Auxiliares</em>. Foco em tratamento de água (pH, cloretos, purgas) e queimadores de bunker.</p>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📺 Conteúdo Recomendado:</strong>
+                                <p class="text-slate-600 mt-0.5">Aulas teóricas de ciclos Rankine e Brayton de faculdades de Engenharia Mecânica da USP (YouTube) ou canais da Petrobras sobre combustíveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 5: Metrologia & Usinagem -->
+                <div class="resource-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded">14% Incidência</span>
+                            <span class="text-xl">📐</span>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Metrologia &amp; Usinagem</h3>
+                        
+                        <div class="space-y-3 text-xs text-slate-700">
+                            <div>
+                                <strong class="text-slate-900 block">📖 Material Base (Imbatível):</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><strong>Apostilas Telecurso 2000 (Mecânica):</strong> Módulos de <em>Metrologia</em> e <em>Usinagem (Torno Mecânico)</em>.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📑 Conteúdo Prático:</strong>
+                                <p class="text-slate-600 mt-0.5">Leitura exata de Paquímetro (nônio em mm e polegadas), Micrômetro, Relógio Comparador e ângulos de ferramentas de corte.</p>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📺 Canais do YouTube:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><strong>Vídeo-Aulas Telecurso 2000 Mecânica:</strong> Disponíveis gratuitamente no YouTube (Playlists de Metrologia).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 6: Segurança & SOLAS -->
+                <div class="resource-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-maritime-coral uppercase tracking-wider bg-red-50 px-2.5 py-1 rounded">14% Incidência</span>
+                            <span class="text-xl">🛟</span>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Segurança, SOLAS &amp; LSA</h3>
+                        
+                        <div class="space-y-3 text-xs text-slate-700">
+                            <div>
+                                <strong class="text-slate-900 block">📜 Legislação e Códigos IMO:</strong>
+                                <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+                                    <li><strong>Convenção SOLAS:</strong> Capítulo II-2 (Proteção contra Incêndio) e Capítulo III (Salvamento).</li>
+                                    <li><strong>Código LSA (Life-Saving Appliances)</strong> e <strong>FSS Code</strong>.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">📑 Apostilas DPC Marinha:</strong>
+                                <p class="text-slate-600 mt-0.5">Apostilas de cursos <em>ECIN (Equipamentos de Combate a Incêndio)</em> e <em>ESEV (Equipamentos de Salvamento)</em> da Marinha Mercante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: LÍNGUA PORTUGUESA -->
+        <section id="portugues" class="bg-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>📝</span> Língua Portuguesa (Direcionamento Cesgranrio)
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    A Cesgranrio possui um estilo enxuto de questões, priorizando reescrita de trechos, regência e coesão textual em textos informativos ou opinativos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-maritime-blue text-base mb-2">📖 Livros Didáticos &amp; Gramáticas</h3>
+                    <ul class="text-xs text-slate-700 space-y-2">
+                        <li><strong>A Gramática do Parapassar</strong> – Fernando Pestana (Excelente organização temática com foco em concursos).</li>
+                        <li><strong>Gramática para Concursos</strong> – Adriana Figueiredo (Didática excelente para resolução de questões).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-maritime-blue text-base mb-2">📺 Canais Recomendados (YouTube)</h3>
+                    <ul class="text-xs text-slate-700 space-y-2">
+                        <li><strong>Professor Noslen:</strong> Revisão rápida de regras gramaticais e sintaxe.</li>
+                        <li><strong>Adriana Figueiredo:</strong> Resoluções passo a passo de provas passadas da Cesgranrio.</li>
+                        <li><strong>Português com Letícia:</strong> Exercícios práticos sobre concordância e crase.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-maritime-blue text-base mb-2">⚡ Estratégia de Treino</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Não gaste semanas decorando regras gramaticais raras. Resolva <strong>pelo menos 15 provas passadas da Cesgranrio</strong> (de qualquer concurso recente como Banco do Brasil, Petrobras, Caixa) para acostumar-se com o tamanho das opções.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LÍNGUA INGLESA -->
+        <section id="ingles" class="bg-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-navy-900 flex items-center gap-2">
+                    <span>🌐</span> Língua Inglesa (Inglês Técnico Marítimo)
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    A cobrança é voltada para a leitura instrumental de documentação de bordo e manuais de fabricantes de equipamentos de praça de máquinas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-maritime-teal text-base mb-2">📜 Documentos Oficiais IMO</h3>
+                    <ul class="text-xs text-slate-700 space-y-2">
+                        <li><strong>IMO SMCP (Standard Marine Communication Phrases):</strong> Seção referente a avisos na praça de máquinas e emergências (Engine Room Messages).</li>
+                        <li><strong>Manuais Técnicos PDF:</strong> Fazer leitura diária de manuais reais de motores MAN B&amp;W ou Wärtsilä 32 em inglês.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-maritime-teal text-base mb-2">📖 Dicionários &amp; Guias</h3>
+                    <ul class="text-xs text-slate-700 space-y-2">
+                        <li><strong>English for Maritime Studies</strong> – T.N. Blakey (Livro referência de inglês instrumental marítimo).</li>
+                        <li><strong>Dicionário Técnico Marítimo (Inglês-Português)</strong> do CIAGA/Marinha Mercante.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-maritime-teal text-base mb-2">📺 Conteúdo em Vídeo</h3>
+                    <ul class="text-xs text-slate-700 space-y-2">
+                        <li><strong>Marine Online (YouTube):</strong> Vídeos sobre manutenção de motores operados totalmente em inglês com legendas técnicas.</li>
+                        <li><strong>Merchant Navy Decoded:</strong> Vocabulário prático e rotinas de bordo em inglês.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: BANCOS DE QUESTÕES E SIMULADOS -->
+        <section id="provas" class="bg-slate-900 text-white rounded-2xl shadow-md p-6 sm:p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-maritime-cyan flex items-center gap-2">
+                    <span>🎯</span> Plataformas de Questões &amp; Provas Passadas para Baixar
+                </h2>
+                <p class="text-slate-300 text-sm mt-1">
+                    A resolução massiva de exercícios é o fator determinante entre a teoria e a aprovação no tempo limite.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-white text-base mb-2">📁 Provas Passadas Transpetro</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                        Baixe e resolva integralmente os exames anteriores aplicados pela Cesgranrio para Segundo Oficial de Máquinas:
+                    </p>
+                    <ul class="text-xs text-maritime-cyan space-y-1 font-mono">
+                        <li>• Transpetro 2023 (Edital 2 - 2OM)</li>
+                        <li>• Transpetro 2018 (PSP MAR)</li>
+                        <li>• Transpetro 2017 (Engenheiro de Máquinas)</li>
+                        <li>• Transpetro 2011 (Oficial de Máquinas)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-white text-base mb-2">💻 Filtros Sugeridos no QConcursos / TecConcursos</h3>
+                    <ul class="text-xs text-slate-300 space-y-2">
+                        <li><strong>Banca:</strong> Fundação Cesgranrio.</li>
+                        <li><strong>Instituições:</strong> Transpetro, Petrobras, Marinha do Brasil (EFOMM/ASON).</li>
+                        <li><strong>Disciplinas:</strong> Engenharia Mecânica / Máquinas Marítimas / Eletrotécnica.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-white text-base mb-2">⏱️ Metodologia de Simulado Reta Final</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Imprima as provas completas com o cartão-resposta e resolva em <strong>no máximo 4 horas seguidas</strong> sem consulta a materiais ou celular. Meça sua taxa de acerto por disciplina e foque as revisões nos pontos fracos identificados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto text-center text-xs text-slate-500">
+            <p>Guia de Fontes de Estudo • Concurso Transpetro Segundo Oficial de Máquinas (2OM)</p>
+        </div>
+    </footer>
+
+</body>
+</html>

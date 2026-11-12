@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudos Transpetro - 2OM</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+    body { display: flex; flex-direction: column; height: 100vh; background: #0f172a; }
+    nav { display: flex; background: #1e293b; border-bottom: 1px solid #334155; }
+    button { flex: 1; padding: 14px; border: none; background: transparent; color: #94a3b8; font-size: 15px; font-weight: bold; cursor: pointer; }
+    button.ativo { color: #ffffff; border-bottom: 3px solid #38bdf8; background: #0f172a; }
+    iframe { flex: 1; width: 100%; border: none; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button id="btn-guia" class="ativo" onclick="abrir('guia.html', this)">📚 Guia de Estudos</button>
+    <button id="btn-info" onclick="abrir('https://github.io', this)">📊 Infográfico</button>
+  </nav>
+
+  <iframe id="tela" src="guia.html"></iframe>
+
+  <script>
+    function abrir(url, botao) {
+      document.getElementById('tela').src = url;
+      document.querySelectorAll('button').forEach(b => b.classList.remove('ativo'));
+      botao.classList.add('ativo');
+    }
+  </script>
+
+</body>
+</html>
